@@ -1,0 +1,29 @@
+
+
+sudo -u postgres createuser -P
+
+airflow webserver -p 8081
+
+airflow create_user [-h] [-r ROLE] [-u USERNAME] [-e EMAIL] [-f FIRSTNAME]
+                    [-l LASTNAME] [-p PASSWORD] [--use_random_password]
+
+
+
+
+
+airflow users create --username admin --email apouemo@yahoo.com --firstname adrien --lastname pouemo --role Admin ** adrien12
+
+
+*****
+
+airflow dags trigger --help
+
+pip install apache-airflow
+
+
+[celery]
+
+# The Celery broker URL. Celery supports RabbitMQ, Redis and experimentally
+# a sqlalchemy database. Refer to the Celery documentation for more
+# information.
+broker_url = amqp://guest:guest@{RABBITMQ_HOST}:5672
